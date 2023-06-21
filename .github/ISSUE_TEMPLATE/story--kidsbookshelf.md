@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-As a   ***  I can  ***  so that I  ***
+As a   **user**  I can  **do**  so that I can **achieve**
