@@ -30,7 +30,86 @@
     <title>KidsBookShelf {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <!-- PAGE HEADER - START -->
+	<header class="fixed top">
+		<div class="header-banner d-flex justify-content-between align-items-center">
+			<div class="logo-container">
+				<a class="navbar-brand logo" href="{% url 'home' %}" aria-label="home link"></a>
+			</div>
+			<!-- Search form goes here -->
+			<div class="banner-info d-none d-md-block">
+				<span class="banner-info_delivery text-muted"><iconify-icon inline icon="ph:map-pin"></iconify-icon> The online library</span>
+				<span class="banner-info_email text-muted"><iconify-icon inline icon="entypo:email"></iconify-icon>Kidsbookshelf.com</span>
+				<span class="banner-info_phone text-muted"><iconify-icon inline icon="ph:phone-light"></iconify-icon> 002500877</span>
+			</div>
+		</div>
+		<!-- NAVIGATION - START -->
+		<nav class="navbar navbar-expand-md bg-body-tertiary">
+			<button class="navbar-toggler btn btn-colour-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="toggler-icon"><iconify-icon icon="circum:menu-burger"></iconify-icon></span>
+			</button>
+			<div class="w-100 d-flex justify-content-between">	
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav w-100 d-flex justify-content-between">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								BooksShelf
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="{% url 'categories' %}">All</a></li>
+								<li><a class="dropdown-item" href="{% url 'products' %}?category=Draw books">Draw books</a></li>
+								<li><a class="dropdown-item" href="{% url 'products' %}?category=Educational">Educational</a></li>
+								<li><a class="dropdown-item" href="{% url 'products' %}?category=Fiction">Fictional</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="{% url 'forum' %}">Forum</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'about' %}">About Us</a>
+						</li>
+						{% if request.user.is_authenticated %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Profile
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="{% url 'profile' %}">Manage Profile</a></li>
+								{% if request.user.is_superuser %}
+								<li><a class="dropdown-item" href="{% url 'add_product' %}">Manage Products</a></li>
+								<li><a class="dropdown-item" href="{% url 'create_entry' %}">Post in Forum</a></li>
+								{% endif %}
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+						</li>
+						{% else %}
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'account_login' %}">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+						</li>
+						{% endif %}
+						<li class="nav-item basket-link">
+							<a class="nav-link" href="{% url 'basket' %}">
+								<iconify-icon inline icon="fluent-emoji-high-contrast:basket" style="color: black;"></iconify-icon> Basket 
+								{% if basket_items %}
+									<span class="basket-items-count">&#40;{{ request.session.basket.keys | length }}&#41;</span>
+								{% endif %}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- NAVIGATION - END -->
+	</header>
+	<!-- PAGE HEADER - END -->
 
     {% if messages %}
         <div class="message-container"></div>

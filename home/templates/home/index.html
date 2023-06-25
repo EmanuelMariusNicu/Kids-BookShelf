@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <img src="" alt="Kids book library" class="hero-img">
+    <main>
+        <div class="container mb-5 d-flex flex-column">
+            <h1>Selection of books</h1>
+            <p>Find top quality online books for kids.<br>
+           
+            </p>
+            <a href="{% url 'categories' %}" class="btn btn-colour-bg fs-3 mt-4 align-self-start">Books Library</a>
+        </div>
+    </main>
+{% endblock %}
