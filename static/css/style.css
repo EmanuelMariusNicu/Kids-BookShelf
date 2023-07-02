@@ -1,0 +1,285 @@
+
+
+ /* General styling and utility classes */
+
+ html {
+     height: 100%;
+ }
+
+ body {
+     min-height: 100%;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Varela Round', sans-serif;
+     background-color: gray;
+ }
+
+ h1 {
+     font-weight: 800;
+     margin: 1.5em 0;
+ }
+
+ p {
+     line-height: 2;
+     font-size: 1.2rem;
+ }
+
+ .logo-font {
+     font-family: 'Pacifico', cursive;
+ }
+
+
+ 
+
+ 
+ /* Header and Navigation styling */
+
+ .header-banner {
+     margin: 1.8em;
+ }
+
+ .banner-info>* {
+     margin: 0 .5em;
+ }
+
+ .logo {
+     font-family: 'Pacifico', cursive;
+     color: #000;
+     
+     
+ }
+
+ .logo:hover {
+     color: #89b3cf;
+ }
+
+ .navbar-nav,
+ .dropdown-item {
+     background-color: rgb(226, 222, 226);
+ }
+
+ .navbar {
+     align-content: center;
+     
+ }
+
+ .nav-item,
+ .dropdown-item {
+     padding: .3em .8em;
+     border: 1px solid;
+     flex: 1;
+     text-align: center;
+ }
+
+ .nav-item:hover {
+     background-color:rgb(168, 168, 177);
+ }
+
+ .nav-link {
+     color: #000;
+     font-size: 1.3rem;
+ }
+
+ .nav-link:hover {
+     color: #000;
+     font-weight: 600;
+ }
+
+ .dropdown-menu {
+     padding: 0;
+     max-width: 260px;
+     margin: 0 auto;
+ }
+
+ .dropdown-item:hover {
+     color: #000;
+     font-weight: 600;
+     background-color: green;
+ }
+
+ .navbar-toggler {
+     font-size: 2rem;
+     /* margin: 1em; */
+     margin: 0;
+     position: absolute;
+     right: 0px;
+     z-index: 99;
+ }
+
+ .toggler-icon iconify-icon {
+     margin-top: 5px;
+ }
+
+ /* Home page styling */
+
+ .hero-img {
+     
+     left: 50%;
+     margin-left: -50vw;
+     margin-right: -50vw;
+     max-width: 100vw;
+     position: relative;
+     right: 50%;
+     width: 100vw;
+ }
+
+ .auth-btn:hover {
+     color: #000;
+     background-color: ;
+ }
+
+ .auth-btn:active {
+     transform: scale(1.05);
+     transition: ease-in-out;
+ }
+
+
+ /* Categories/Products page styling */
+
+ .card-container {
+     max-width: 1100px;
+     margin: 50px auto;
+ }
+
+ .category-card,
+ .product-card,
+ .forum-entry-card {
+     width: fit-content;
+     border: solid 2px;
+     border-radius: 4px;
+     margin: 0 1.5em 1.5em 0;
+ }
+
+ .category-link,
+ .product-link {
+     min-height: 100%;
+     text-decoration: none;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .category-img,
+ .product-img {
+     padding: 1em 0;
+     display: block;
+     width: 100%;
+     max-width: 250px;
+     margin: 0 auto;
+ }
+
+ .category-link-title,
+ .product-link-title {
+     color: #000;
+     text-align: center;
+     font-weight: 600;
+     margin-top: auto;
+ }
+
+ /* Product detail page styling */
+
+ .detail-container {
+     max-width: 1100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin: 50px 0;
+ }
+
+ .detail-img {
+     max-width: 280px;
+     display: block;
+     margin: 0 auto;
+ }
+
+ .detail-list {
+     font-size: 1.3rem;
+     line-height: 2;
+ }
+
+ /* Shopping basket styling */
+
+ .basket-img {
+     width: 15%;
+     margin-right: 2rem;
+ }
+
+ .decrement-qty,
+ .increment-qty {
+     font-size: 1.4em;
+     padding: 0 .5em;
+     margin: 0;
+ }
+
+ .qty_input {
+     max-width: 25%;
+ }
+
+ .update-link,
+ .remove-item {
+     cursor: pointer;
+ }
+
+ /* Forum styling */
+
+ .forum-entry-card {
+     max-width: 800px;
+     width: 80vw;
+     padding: 1em;
+ }
+
+ .forum-entry-card:hover {
+     border-color: ;
+     transform: scale(1.02);
+     transition: ease-in-out;
+     box-shadow: 0px 7px 3px -3px rgba(0, 0, 0, 0.3);
+ }
+
+ .forum-entry-link {
+     color: #000;
+     text-decoration: none;
+ }
+
+ .forum-entry-link:hover {
+     color: #000;
+
+ }
+
+ .type-label {
+     font-size: .8rem;
+     padding: .2em;
+     margin-bottom: 1.2em;
+ }
+
+ .entry-date {
+     font-size: 0.6rem;
+     margin-bottom: 0;
+ }
+
+ .entry-content p {
+     font-size: 1rem;
+ }
+
+ .entry-image {
+     width: 100%;
+ }
+
+ #id_excerpt {
+     height: 6rem;
+ }
+
+ .response-form label {
+     display: none;
+ }
+
+ 
+ /* Error page styling */
+
+ .error-img {
+     max-width: 25%;
+ }
+
+ .error-btn {
+     width: fit-content;
+ }
+ /* Up to MEDIUM SIZE screens */
+
