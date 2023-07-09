@@ -36,7 +36,7 @@
 	<header class="fixed top">
 		<div class="header-banner d-flex justify-content-between align-items-center">
 			<div class="logo-container">
-				<img class="navbar-brand logo" src="/static/images/logo.png" width="370"  height="150"  href="{% url 'home' %}" aria-label="home link">
+				<img class="navbar-brand logo" src="/static/images/logo.png" width="350"  height="120"  href="{% url 'home' %}" aria-label="home link">
 			</div>
 			
 			<div class="banner-info d-none d-md-block">
@@ -72,6 +72,19 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="{% url 'about' %}">About Us</a>
+						</li>
+						{% if request.user.is_authenticated %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Profile
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="{% url 'profile' %}">Manage Profile</a></li>
+								{% if request.user.is_superuser %}
+								<li><a class="dropdown-item" href="{% url 'add_product' %}">Manage Products</a></li>
+								<li><a class="dropdown-item" href="{% url 'create_entry' %}">Post in Forum</a></li>
+								{% endif %}
+							</ul>
 						</li>
 						
 					</ul>
