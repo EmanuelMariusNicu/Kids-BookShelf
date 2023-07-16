@@ -121,6 +121,7 @@
      position: relative;
      right: 50%;
      width: 100vw;
+     height: 600px;
  }
 
  .auth-btn:hover {
@@ -281,5 +282,31 @@
  .error-btn {
      width: fit-content;
  }
- /* Up to MEDIUM SIZE screens */
+ 
+ /*Footer */
 
+ footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    background-color: aqua;
+
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+}
+.privacy-link {
+    text-transform: uppercase;
+    color: #000;
+    flex-shrink: 0;
+    padding-right: 3em;
+}
