@@ -29,13 +29,10 @@
  }
 
 
- 
-
- 
  /* Header and Navigation styling */
- .logo-container {
+ /* .logo-container {
    
- }
+ } */
 
  .header-banner {
      margin: 1.8em;
@@ -128,7 +125,7 @@
 
  .auth-btn:hover {
      color: #000;
-     background-color: ;
+    
  }
 
  .auth-btn:active {
@@ -231,7 +228,7 @@
  }
 
  .forum-entry-card:hover {
-     border-color: ;
+     /* border-color: ; */
      transform: scale(1.02);
      transition: ease-in-out;
      box-shadow: 0px 7px 3px -3px rgba(0, 0, 0, 0.3);

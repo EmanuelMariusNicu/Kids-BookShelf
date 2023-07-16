@@ -14,7 +14,7 @@
     {% endblock %} 
 
     {% block corecss %}
-		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     {% endblock %}
 
@@ -32,6 +32,8 @@
     <title>KidsBookShelf {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+	
+    {% block page_header %}
     <!-- PAGE HEADER - START -->
 	<header class="fixed top">
 		<div class="header-banner d-flex justify-content-between align-items-center">
@@ -81,17 +83,30 @@
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="{% url 'profile' %}">Manage Profile</a></li>
 								{% if request.user.is_superuser %}
-								<li><a class="dropdown-item" href="{% url 'add_product' %}">Manage Products</a></li>
-								<li><a class="dropdown-item" href="{% url 'create_entry' %}">Post in Forum</a></li>
+								<li><a class="dropdown-item" href="">Manage Products</a></li>
+								<li><a class="dropdown-item" href="">Post in Forum</a></li>
 								{% endif %}
 							</ul>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+						</li>
+						{% else %}
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'account_login' %}">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+						</li>
+						{% endif %}
+						
 						
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- NAVIGATION - END -->
+	{% endblock %}
 	</header>
 	<!-- PAGE HEADER - END -->
 
@@ -99,14 +114,14 @@
         <div class="message-container"></div>
     {% endif %}
 
-    <!-- {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
+    
+	<!-- MAIN PAGE CONTENT -->
+	<div class="container mb-5">
+	{% block content %}
+	{% endblock %}
 
     {% block postloadjs %}
-    {% endblock %} -->
+    {% endblock %}
 
     
 
