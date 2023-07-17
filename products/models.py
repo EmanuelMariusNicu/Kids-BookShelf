@@ -24,8 +24,11 @@ class Product(models.Model):
     """
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.CASCADE)
-    books = models.CharField(max_length=80)
+    sku= models.CharField(max_length=80)
+    name = models.CharField(max_length=80)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        return self.books
+        return self.name

@@ -2,7 +2,10 @@
     "pk": 1,
     "model": "products.category",
     "fields": {
+      "sku":"",
       "name": "Draw books",
+      "description":"",
+      "price":"",
       "image": ""
     }
   },
@@ -10,7 +13,10 @@
     "pk": 2,
     "model": "products.category",
     "fields": {
+      "sku":"",
       "name": "Educational",
+      "description":"",
+      "price":"",
       "image": ""
     }
   },
@@ -18,7 +24,10 @@
     "pk": 3,
     "model": "products.category",
     "fields": {
+      "sku":"",
       "name": "Fiction",
+      "description":"",
+      "price":"",
       "image": ""
     }
   }
