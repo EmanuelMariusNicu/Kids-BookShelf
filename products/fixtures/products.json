@@ -1,25 +1,46 @@
-[{
+
+  [{
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "books": "Blackrock",
-      
+      "sku":"PICBOK",
+      "name": "Picture_Book",
+      "description":"Books full of images content",
+      "price":"5.99",
+      "image": ""
     }
   },
   {
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "books": "Bluebell",
-      
-      
+      "sku":"EDUCAT",
+      "name": "Educational",
+      "description":"Educative books for children",
+      "price":"4.99",
+      "image": ""
     }
   },
   {
     "pk": 3,
     "model": "products.product",
     "fields": {
-      "books": "Copper Black Maran",
-      
+      "sku":"NONFIC",
+      "name": "Non_Fiction",
+      "description":"Non fiction books for toddler",
+      "price":"3.99",
+      "image": ""
     }
   },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku":"LRGPRT",
+      "name": "Large_prints",
+      "description":"Representative large images book for kids over 2 year",
+      "price":"4.99",
+      "image": ""
+    }
+  }
+]
