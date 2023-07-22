@@ -2,7 +2,8 @@
   "pk": 1,
   "model": "products.category",
   "fields": {
-    "name": "Picture_Book"
+    "name": "Picture_Book",
+    "friendly_name": "Picture Books"
 
     
   }
@@ -14,13 +15,15 @@
     "name": "Educational"
     
     
+    
   }
 },
 {
   "pk": 3,
   "model": "products.category",
   "fields": {
-    "name": "Non_Fiction"
+    "name": "Non_Fiction",
+    "friendly_name": "Non Fiction"
     
   }
 },
@@ -28,7 +31,8 @@
   "pk":4,
   "model": "products.category",
   "fields": {
-    "name": "Large_prints"
+    "name": "Large_prints",
+    "friendly_name": "Large prints"
 
   }
 }]
