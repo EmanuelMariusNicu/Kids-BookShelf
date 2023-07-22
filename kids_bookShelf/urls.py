@@ -25,3 +25,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+handler404 = 'kids_bookShelf.views.handler404'
+handler500 = 'kids_bookShelf.views.handler500'

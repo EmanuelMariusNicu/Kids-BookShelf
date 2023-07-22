@@ -4,29 +4,30 @@
 {% block content %}
     <a href="{% url 'categories' %}">Back to All Products</a>
     <h1>{{ current_category }}</h1>
-    {% if current_category == "Draw books"%}
+    {% if current_category == "Picture_Book"%}
         <p class="mt-4"></p>
         <p></p>
     {% elif current_category == "Educational" %}
         <p class="mt-4"></p>
         <p></p>
-    {% elif current_category == Fiction" %}
+    {% elif current_category == "Non_Fiction" %}
         <p class="mt-4">
-        <!--<a href="{% url 'forum' %}">forum</a>--></p>
         <p></p>
+    {% elif current_category == "Large_prints" %}
+        <p class="mt-4">   
         <p></p>
     {% endif %}
     <div class="container-fluid">
         <div class="row d-flex justify-content-evenly card-container">
-            {% for product in products%}
+            {% for product in products %}
                 <div class="product-card mb-5">
                     <a href="{% url 'product_detail' product.id %}" class="product-link mb-1">
                         {% if product.image %}
-                            <img class="product-img" src="{{ product.image }}" alt="{{ product.books }}">
+                            <img class="product-img" src="{{ product.image }}" alt="{{ product.name }}">
                         {% else %}
-                            <img class="product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.books }}">
+                            <img class="product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         {% endif %}
-                        <h2 class="product-link-title">{{ product.books }}</h2>
+                        <h2 class="product-link-title">{{ product.name }}</h2>
                     </a>
                 </div>
             {% endfor %}
