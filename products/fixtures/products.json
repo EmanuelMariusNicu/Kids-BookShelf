@@ -3,22 +3,24 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "sku":"PICBOK",
-      "name": "Picture_Book",
-      "description":"Books full of images content",
+      "sku":"SENSOR",
+      "name": "Look who's my pet",
+      "description":"Sensorial book",
       "price":"5.99",
-      "image": ""
+      "image": "book5.jpg",
+      "category":"1"
     }
   },
   {
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "sku":"EDUCAT",
-      "name": "Educational",
-      "description":"Educative books for children",
+      "sku":"FAIRY",
+      "name": "Rod Campbell,Buster's birthday",
+      "description":"",
       "price":"4.99",
-      "image": ""
+      "image": "book1.jpg",
+      "category":"4"
     }
   },
   {
@@ -26,21 +28,35 @@
     "model": "products.product",
     "fields": {
       "sku":"NONFIC",
-      "name": "Non_Fiction",
-      "description":"Non fiction books for toddler",
+      "name": "The smartest Giant in town",
+      "description":"This is a fantasy book",
       "price":"3.99",
-      "image": ""
+      "image": "book10.jpg",
+      "category":"2"
     }
   },
   {
-    "pk": 2,
+    "pk": 4,
     "model": "products.product",
     "fields": {
       "sku":"LRGPRT",
-      "name": "Large_prints",
-      "description":"Representative large images book for kids over 2 year",
+      "name": "That s not my dinosaur",
+      "description":"Sensorial book with large images",
       "price":"4.99",
-      "image": ""
+      "image": "book4.jpg",
+      "category":"1"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku":"LRGPRT",
+      "name": "The Gruffalo",
+      "description":"A fantasy book",
+      "price":"4.99",
+      "image": "book8.jpg",
+      "category":"2"
     }
   }
 ]

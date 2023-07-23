@@ -4,18 +4,19 @@
 {% block content %}
     <a href="{% url 'categories' %}">Back to All Products</a>
     <h1>{{ current_category }}</h1>
-    {% if current_category == "Picture_Book"%}
-        <p class="mt-4"></p>
-        <p></p>
-    {% elif current_category == "Educational" %}
-        <p class="mt-4"></p>
-        <p></p>
-    {% elif current_category == "Non_Fiction" %}
-        <p class="mt-4">
-        <p></p>
-    {% elif current_category == "Large_prints" %}
-        <p class="mt-4">   
-        <p></p>
+    {% if current_category == "Sensorial" %}
+        <p class="mt-4">Words carefully selected to set mood and create vivid images.They are meant for children who are not yet able to read, and help them develop a sense of storytelling, plot, and language recognition. Picture books have illustrations on every page because looking at art helps with story comprehension and understanding that words have meaning.Catch children's attention and stimulate their interest while story is read aloud.</p>
+        <p><a href="{% url 'forum' %}">Forum</a></p>
+    {% elif current_category == "Fairytale" %}
+        <p class="mt-4">Books help kids develop basic language skills and profoundly expand their vocabularies—much more than any other media. Books are interactive; they demand that kids think. Fiction and nonfiction books widen our consciousness. They give us new ways to think and new ideas.</p>
+        <p><a href="{% url 'forum' %}">Forum</a></p>
+    {% elif current_category == "Non Fiction" %}
+        <p class="mt-4">A non-fiction book is one that tells you facts and information about the world around you. It can cover almost any topic, from wild animals to Vikings. If it's about something that really happened or something that really exists, it is non-fiction. Some non-fiction books have illustrations (pictures) as well as words.</p>
+        <p><a href="{% url 'forum' %}">Forum</a></p>
+    {% elif current_category == "Large prints" %}
+        <p class="mt-4">Why printed books are better for children?
+            Parents talked more to their children with children in turn responding to them more while reading the print version, according to the study in Pediatrics. Children more prone to emotional outbursts also responded to their parents better when reading from a book.</p>  
+        <p><a href="{% url 'forum' %}">Forum</a></p>
     {% endif %}
     <div class="container-fluid">
         <div class="row d-flex justify-content-evenly card-container">
@@ -23,7 +24,7 @@
                 <div class="product-card mb-5">
                     <a href="{% url 'product_detail' product.id %}" class="product-link mb-1">
                         {% if product.image %}
-                            <img class="product-img" src="{{ product.image }}" alt="{{ product.name }}">
+                            <img class="product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                         {% else %}
                             <img class="product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         {% endif %}

@@ -41,7 +41,7 @@ p {
     font-family: 'Pacifico', cursive;
 }
 .show {
-    background-color: pink;
+    background-color:#dbdae3;
 }
 
 /* General button styling */
@@ -94,7 +94,7 @@ button:hover {
 
 /* Header and Navigation styling */
 header {
-    background-color: #e7e7e7;
+    background-color:#E3DADA;
 }
 .header-banner {
     margin: 1.8em;

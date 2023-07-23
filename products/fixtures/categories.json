@@ -2,19 +2,18 @@
   "pk": 1,
   "model": "products.category",
   "fields": {
-    "name": "Picture_Book",
-    "friendly_name": "Picture Books"
-
-    
+    "name": "Sensorial",
+    "friendly_name": "Sensorial books",
+    "image":"Sensorial-books.jpg"    
   }
 },
 {
   "pk": 2,
   "model": "products.category",
   "fields": {
-    "name": "Educational"
-    
-    
+    "name": "Fairytale",
+    "friendly_name": "Fairytale",
+    "image":"Fairytale-books.jpg"
     
   }
 },
@@ -22,17 +21,17 @@
   "pk": 3,
   "model": "products.category",
   "fields": {
-    "name": "Non_Fiction",
-    "friendly_name": "Non Fiction"
-    
+    "name": "Non Fiction",
+    "friendly_name": "Non Fiction",
+    "image":"Non-fiction-books.jpg"
   }
 },
 {
   "pk":4,
   "model": "products.category",
   "fields": {
-    "name": "Large_prints",
-    "friendly_name": "Large prints"
-
+    "name": "Large prints",
+    "friendly_name": "Large Prints",
+    "image":"Large-prints-books.jpg"
   }
 }]

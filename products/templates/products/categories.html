@@ -6,7 +6,7 @@
 <h1>Book Library</h1>
 <p>
     Browse through our large variety of books for kids and children and find what suits your needs.
-    Need more information in particular! Try our <!--<a href="{% url 'forum' %}">forum</a> -->for helpful articles 
+    Need more information in particular! Try our <a href="{% url 'forum' %}">forum</a>for helpful articles 
     or simply <a href="{% url 'about' %}#contact-info">contact us</a>. We are happy to help!
 </p>
 <div class="container-fluid">
@@ -14,7 +14,7 @@
         {% for category in categories %}
             <div class="category-card">
                 <a href="{% url 'products' %}?category={{ category.name }}" class="category-link">
-                    <img class="category-img" src="{{ category.image }}" alt="{{ category.name }}">
+                    <img class="category-img" src="{{ category.image.url }}" alt="{{ category.name }}">
                     <h2 class="category-link-title">{{ category.name }}</h2>
                 </a>
             </div>
