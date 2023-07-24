@@ -25,19 +25,19 @@
                                 {% endif %}
                                 {{ item.product.name }}
                             </td>
-                            <td class="text-end">€ {{ item.product.price }}</td>
+                            <td class="text-end">£ {{ item.product.price }}</td>
                             <td class="qty-form text-end">{% include "basket/quantity-form.html" %}</td>
-                            <td class="text-end">€ {{ item.product.price | calc_subtotal:item.quantity }}</td>
+                            <td class="text-end">£ {{ item.product.price | calc_subtotal:item.quantity }}</td>
                         </tr>
                     {% endfor %}
                     <tr class="border-top border-secondary">
                         <td colspan="4" class="text-end">
-                            <strong>Basket Total: € {{ total | floatformat:2 }}</strong>
+                            <strong>Basket Total:  £ {{ total | floatformat:2 }}</strong>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="4" class="text-end" id="basketDeliveryCost">
-                            Delivery Cost: € {{ delivery | floatformat:2 }}
+                            Delivery Cost:  £ {{ delivery | floatformat:2 }}
                         </td>
                     </tr>
                     <tr>
@@ -46,7 +46,7 @@
                     </tr>
                     <tr>
                         <td colspan="4" class="text-end" id="basketGrandTotal">
-                            <strong>Grand Total: € {{ grand_total | floatformat:2 }}</strong>
+                            <strong>Grand Total:  £ {{ grand_total | floatformat:2 }}</strong>
                         </td>
                     </tr>
                 </table>
@@ -58,13 +58,7 @@
                     </span>
                     Keep Shopping
                 </a>
-                <a href="{% url 'checkout' %}" class="btn btn-colour-bg mx-0">
-                    <span class="icon">
-                        <iconify-icon inline icon="mdi:cash-lock" width="16"></iconify-icon>
-                    </span>
-                    Go to Checkout
-                </a>
-            </div>
+                
         {% else %}
             <p class="mt-5">Basket is empty.</p>
             <a href="{% url 'categories' %}" class="btn btn-colour-bg align-self-start">
@@ -73,6 +67,13 @@
                 </span>
                 Back to products
             </a>
+            <a href="{% url 'checkout' %}" class="btn btn-colour-bg mx-0">
+                <span class="icon">
+                    <iconify-icon inline icon="mdi:cash-lock" width="16"></iconify-icon>
+                </span>
+                Go to Checkout
+            </a>
+        </div>
         {% endif %}
 {% endblock %}
 

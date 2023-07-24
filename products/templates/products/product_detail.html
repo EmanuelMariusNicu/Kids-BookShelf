@@ -7,7 +7,7 @@
 <div class="detail-container">
     <div>
         {% if product.image %}
-            <img class="detail-img px-1" src="{{ product.image }}" alt="{{ product.name }}">
+            <img class="detail-img px-1" src="{{ product.image.url }}" alt="{{ product.name }}">
         {% else %}
             <img class="detail-img px-1" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
         {% endif %}
