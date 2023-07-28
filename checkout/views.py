@@ -166,6 +166,8 @@ def checkout_success(request, order_number):
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
+        'stripe_public_key':'pk_test_51NYnjgB1xPUQ2PcUmFQS3JEvWXezSprOZNTP5jGsZmTq5poxffWApyJ6D4xgDi7S7a4SCwJ2N3jBw7XMPqIuIge200wsTmdr3Y',
+        'client_secret':'test client secret',
     }
 
     return render(request, template, context)

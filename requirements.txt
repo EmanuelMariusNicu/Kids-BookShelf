@@ -9,3 +9,4 @@ sqlparse==0.4.4
 django-crispy-forms==1.14.0
 crispy-bootstrap5==0.7
 django-summernote==0.8.20.0
+stripe==5.5.0
