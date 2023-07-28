@@ -37,6 +37,10 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
+    print(settings.STRIPE_CURRENCY)
+    print(stripe_public_key)
+    print(stripe_secret_key)
+
     if request.method == "POST":
         basket = request.session.get('basket', {})
 
@@ -166,8 +170,7 @@ def checkout_success(request, order_number):
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
-        'stripe_public_key':'pk_test_51NYnjgB1xPUQ2PcUmFQS3JEvWXezSprOZNTP5jGsZmTq5poxffWApyJ6D4xgDi7S7a4SCwJ2N3jBw7XMPqIuIge200wsTmdr3Y',
-        'client_secret':'test client secret',
+       
     }
 
     return render(request, template, context)

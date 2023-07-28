@@ -6,29 +6,29 @@ from django.db.models import Sum
 from products.models import Product
 from profiles.models import UserProfile
 
-London = "Greater London",
-Manchester = "Greater Manchester",
-Birmingham = "West Midlands",
-Leeds =  "West Yorkshire",
-Liverpool = "Merseyside",
-Newcastle= "Tyne and Wear",
-Sheffield = "South Yorkshire",
-Bristol ="Bristol",
-Nottingham ="Nottinghamshire",
-Leicester = "Leicestershire",
-Southampton = "Hampshire",
-Portsmouth = "Hampshire",
-Oxford = "Oxfordshire",
-Cambridge = "Cambridgeshire",
-York = "North Yorkshire",
-Brighton = "East Sussex",
-Bath = "Somerset",
-Coventry = "West Midlands",
-Stoke = "Staffordshire",
+London = "Greater London"
+Manchester = "Greater Manchester"
+Birmingham = "West Midlands"
+Leeds = "West Yorkshire"
+Liverpool = "Merseyside"
+Newcastle = "Tyne and Wear"
+Sheffield = "South Yorkshire"
+Bristol ="Bristol"
+Nottingham ="Nottinghamshire"
+Leicester = "Leicestershire"
+Southampton = "Hampshire"
+Portsmouth = "Hampshire"
+Oxford = "Oxfordshire"
+Cambridge = "Cambridgeshire"
+York = "North Yorkshire"
+Brighton = "East Sussex"
+Bath = "Somerset"
+Coventry = "West Midlands"
+Stoke = "Staffordshire"
 Plymouth = "Devon"
 
 
-COUNTIES= [
+COUNTIES = [
     (London,  "Greater London"),
     (Manchester, "Greater Manchester"),
     (Birmingham, "West Midlands"),
@@ -48,7 +48,8 @@ COUNTIES= [
     (Bath, "Somerset"),
     (Coventry, "West Midlands"),
     (Stoke, "Staffordshire"),
-    (Plymouth, "Devon")]
+    (Plymouth, "Devon"),
+    ]
 
 STANDARD_DELIVERY_COST = 20
 

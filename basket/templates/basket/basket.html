@@ -58,6 +58,12 @@
                     </span>
                     Keep Shopping
                 </a>
+                <a href="{% url 'checkout' %}" class="btn btn-colour-bg mx-0">
+                    <span class="icon">
+                        <iconify-icon inline icon="mdi:cash-lock" width="16"></iconify-icon>
+                    </span>
+                    Go to Checkout
+                </a>
                 
         {% else %}
             <p class="mt-5">Basket is empty.</p>
@@ -67,12 +73,7 @@
                 </span>
                 Back to products
             </a>
-            <a href="{% url 'checkout' %}" class="btn btn-colour-bg mx-0">
-                <span class="icon">
-                    <iconify-icon inline icon="mdi:cash-lock" width="16"></iconify-icon>
-                </span>
-                Go to Checkout
-            </a>
+            
         </div>
         {% endif %}
 {% endblock %}
