@@ -4,63 +4,50 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 
-Bedfordshire = 'Bedfordshire'
-Berkshire = 'Berkshire'
-Bristol = 'Bristol'
-Buckinghamshire = 'Buckinghamshire'
-Cambridgeshire = 'Cambridgeshire'
-Cheshire = 'Cheshire'
-City_of_London = 'City_of_London'
-Cornwall = 'Cornwall'
-County_Durham = 'County_Durham'
-Cumbria = 'Cumbria'
-Derbyshire = 'Derbyshire'
-Devon = 'Devon'
-Dorset = 'Dorset'
-East_Riding_of_Yorkshire = 'East_Riding_of_Yorkshire'
-East_Sussex = 'East_Sussex'
-Essex = 'Essex'
-Gloucestershire = 'Gloucestershire'
-Greater_London = 'Greater_London'
-Greater_Manchester = 'Greater_Manchester'
-Hampshire = 'Hampshire'
-Herefordshire = 'Herefordshire'
-Hertfordshire = 'Hertfordshire'
-Isle_of_Wight = 'Isle_of_Wight'
-Kent = 'Kent'
-Lancashire = 'Lancashire'
-Leicestershire = 'Leicestershire'
-Lincolnshire = 'Lincolnshire'
-Merseyside = 'Merseyside'
-Norfolk_East = 'Norfolk_East'
-North_Yorkshire = 'North_Yorkshire'
-Northamptonshire = 'Northamptonshire'
-Northumberland = 'Northumberland'
-Nottinghamshire = 'Nottinghamshire'
-Oxfordshire = 'Oxfordshire'
-Rutland = 'Rutland'
-Shropshire = 'Shropshire'
-Somerset = 'Somerset'
-South_Yorkshire = 'South_Yorkshire'
-Staffordshire = 'Staffordshire'
-Suffolk_East = 'Suffolk_East'
-Surrey = 'Surrey'
-Tyne_Wear = 'Tyne_Wear'
-Warwickshire = 'Warwickshire'
-West_Midlands = 'West_Midlands'
-West_Sussex = 'West_Sussex'
-West_Yorkshire = 'West_Yorkshire'
-Wiltshire  = 'Wiltshire '
-Worcestershire = 'Worcestershire'
+London = "Greater London"
+Manchester = "Greater Manchester"
+Birmingham = "West Midlands"
+Leeds = "West Yorkshire"
+Liverpool = "Merseyside"
+Newcastle = "Tyne and Wear"
+Sheffield = "South Yorkshire"
+Bristol ="Bristol"
+Nottingham ="Nottinghamshire"
+Leicester = "Leicestershire"
+Southampton = "Hampshire"
+Portsmouth = "Hampshire"
+Oxford = "Oxfordshire"
+Cambridge = "Cambridgeshire"
+York = "North Yorkshire"
+Brighton = "East Sussex"
+Bath = "Somerset"
+Coventry = "West Midlands"
+Stoke = "Staffordshire"
+Plymouth = "Devon"
+
 
 COUNTIES = [
-    (Bedfordshire, 'Bedfordshire'),
-    (Berkshire, 'Berkshire'),
-    (Bristol, 'Bristol'),
-    (Buckinghamshire, 'Buckinghamshire'),
-    (Cambridgeshire, 'Cambridgeshire')
-]
-
+    (London,  "Greater London"),
+    (Manchester, "Greater Manchester"),
+    (Birmingham, "West Midlands"),
+    (Leeds, "West Yorkshire"),
+    (Liverpool, "Merseyside"),
+    (Newcastle, "Tyne and Wear"),
+    (Sheffield, "South Yorkshire"),
+    (Bristol, "Bristol"),
+    (Nottingham, "Nottinghamshire"),
+    (Leicester, "Leicestershire"),
+    (Southampton, "Hampshire"),
+    (Portsmouth, "Hampshire"),
+    (Oxford, "Oxfordshire"),
+    (Cambridge, "Cambridgeshire"),
+    (York, "North Yorkshire"),
+    (Brighton, "East Sussex"),
+    (Bath, "Somerset"),
+    (Coventry, "West Midlands"),
+    (Stoke, "Staffordshire"),
+    (Plymouth, "Devon"),
+    ]
 
 
 class UserProfile(models.Model):

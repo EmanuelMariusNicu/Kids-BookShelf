@@ -37,10 +37,6 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
-    print(settings.STRIPE_CURRENCY)
-    print(stripe_public_key)
-    print(stripe_secret_key)
-
     if request.method == "POST":
         basket = request.session.get('basket', {})
 
@@ -99,12 +95,15 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
+        print('checkout apelat')
         # Attempt to prefill the form with
         # any info the user maintains in their profile
         if request.user.is_authenticated:
+            print('aici')
             try:
                 profile = UserProfile.objects.get(user=request.user)
+                print('logat')
+                print(profile)
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
@@ -118,6 +117,7 @@ def checkout(request):
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
+            print('nelogat')
             order_form = OrderForm()
 
     if not stripe_public_key:

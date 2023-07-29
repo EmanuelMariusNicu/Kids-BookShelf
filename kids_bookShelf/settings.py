@@ -3,6 +3,7 @@ Django settings for kids_bookShelf project.
 
 """
 import os
+import dj_database_url
 from pathlib import Path
 if os.path.isfile('env.py'):
     import env
@@ -21,7 +22,10 @@ SECRET_KEY = 'django-insecure-42h$(akmt)*o#h4*5sh(wogjyv0+d@%e-))y&#$jjv^on+nx@j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-emanuelmari-kidsbookshe-jecmvpsamgh.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = [
+    'localhost',
+    'kids-bookshelf.herokuapp.com',
+]
 
 
 # Application definition
@@ -143,7 +147,7 @@ WSGI_APPLICATION = 'kids_bookShelf.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -151,7 +155,11 @@ else:
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
-    }
+}
+# DATABASES = {
+#      'default': dj_database_url.parse('postgres://itsmhwlk:HigHSdq6mfC0cT2Jzu1YikteFI7J5VNe@lucky.db.elephantsql.com/itsmhwlk')
+#  }
+    
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -198,7 +206,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Stripe
-STRIPE_CURRENCY = 'pound'
+STRIPE_CURRENCY = 'GBP'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
