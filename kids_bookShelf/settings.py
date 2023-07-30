@@ -22,10 +22,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'localhost',
-    'kids-bookshelf-bfa2b8e9e45c.herokuapp.com',
-]
+ALLOWED_HOSTS = ['kids-bookshelf.herokuapp.com','localhost']
 
 
 # Application definition
@@ -149,7 +146,7 @@ WSGI_APPLICATION = 'kids_bookShelf.wsgi.application'
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
+        }
 else:
     DATABASES = {
         'default': {
@@ -157,10 +154,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
 }
-# DATABASES = {
-#      'default': dj_database_url.parse('postgres://itsmhwlk:HigHSdq6mfC0cT2Jzu1YikteFI7J5VNe@lucky.db.elephantsql.com/itsmhwlk')
-#  }
-    
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
