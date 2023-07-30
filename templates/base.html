@@ -8,24 +8,43 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
+		<meta name="description" 
+			  content="Discover a magical world of imagination with our online book library for kids! From sensorial to large prints and from fairytales to non fiction, our curated collection of children's books will captivate young minds. 
+			  Browse now and spark your child's imagination! ">
+			  <meta name="keywords" 
+			  content="online library,books for kids,
+				       books for sale online, sensorial books, fairytale books, non fiction books, 
+					   large print books, used books for kids,used books at affordable prices ,books for young minds
+					   Look who's my pet, That's not my dinosaur, The smartest giant in town , The Gruffalo, A squash and a squeeze, Who's in the loo? ">
+			  
+	 {% endblock %}
 
     {% block extra_meta %}
     {% endblock %} 
 
     {% block corecss %}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Orbitron&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+		
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<link rel="preconnect" href="https://fonts.gstatic.com"
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
-		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+			<!-- Iconify -->
+			<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+			<!-- JQuery -->
+        	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+			<!-- Bootstrap JS -->
+        	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+			<!-- Stripe -->
+		 	<script src="https://js.stripe.com/v3/"></script>
 		
     {% endblock %}
 
@@ -51,8 +70,9 @@
 						<div class="input-group-append">
 							<button class="form-control btn" type="submit" aria-label="search">
 								<span class="icon">
-									<i class="fas fa-search icon"></i>
+									
 								</span>
+								<iconify-icon icon="flat-color-icons:search" style="font-size: 40px;" rotate="90deg"></iconify-icon>
 							</button>
 						</div>
 					</div>
@@ -68,7 +88,7 @@
 		<!-- NAVIGATION - START -->
 		<nav class="navbar navbar-expand-md bg-body-tertiary">
 			<button class="navbar-toggler btn btn-colour-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="toggler-icon"><iconify-icon icon="circum:menu-burger"></iconify-icon></span>
+				<span class="toggler-icon" ><iconify-icon icon="circum:menu-burger"></iconify-icon></span>
 			</button>
 			<div class="w-100 d-flex justify-content-between">	
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -78,7 +98,8 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Books-Shelf
+								<iconify-icon icon="game-icons:bookshelf" width="40" height="30"  style="color:rgb(28, 8, 141)"></iconify-icon>
+								Library 
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="{% url 'categories' %}">All</a></li>
@@ -87,7 +108,9 @@
 								<li><a class="dropdown-item" href="{% url 'products' %}?category=Non Fiction">Non Fiction</a></li>
 								<li><a class="dropdown-item" href="{% url 'products' %}?category=Large prints">Large prints</a></li>
 							</ul>
+						
 						</li>
+						
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="{% url 'forum' %}" >Forum</a>	
 						</li>
@@ -97,7 +120,9 @@
 						{% if request.user.is_authenticated %}
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Profile
+							<iconify-icon icon="iconamoon:profile-fill" width="40" height="26"  style="color:rgb(28, 8, 141)"></iconify-icon>
+								Profile 
+
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="{% url 'profile' %}">Manage Profile</a></li>
@@ -120,10 +145,11 @@
 						{% endif %}
 						<li class="nav-item basket-link">
 							<a class="nav-link" href="{% url 'basket' %}">
-								<iconify-icon inline icon="fluent-emoji-high-contrast:basket" style="color: black;"></iconify-icon> Basket 
+								 Basket 
 								{% if basket_items %}
 									<span class="basket-items-count">&#40;{{ request.session.basket.keys | length }}&#41;</span>
 								{% endif %}
+								<iconify-icon icon="streamline:shopping-cart-2-shopping-cart-checkout" width="40" height="27" style="color:rgb(28, 8, 141)"></iconify-icon>
 							</a>
 						</li>
 						
@@ -198,14 +224,14 @@
 
 {% block postloadjs %}
 	
-	<script>
+	<!-- <script>
 		 // Bootstrap boilerplate JS for toast handling
 		let toast = bootstrap.Toast.getOrCreateInstance(document.querySelector('.toast'));
 		toast.show(); 
-	</script>
+	</script> -->
 
 	<!-- Newsletter toggle JS -->
-	<script>
+	<!-- <script>
 		let newsToggleBtn = document.getElementById("newsletter-toggle-btn");
 		let newsSignupForm = document.getElementById("mc_embed_signup");
 		newsToggleBtn.addEventListener("click", toggleNewsletterForm);
@@ -218,10 +244,10 @@
 				newsSignupForm.style.display = "block";
 			}
 		}
-	</script>
+	</script> -->
 
 	<!-- Mailchimp JS -->
-	<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<!-- <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 	<script>
 		(function($) {
 			window.fnames = new Array(); 
@@ -240,7 +266,7 @@
 			ftypes[5]='birthday';
 		}(jQuery));
 		var $mcj = jQuery.noConflict(true);
-	</script>
+	</script> -->
 {% endblock %}
 </body>
 </html>

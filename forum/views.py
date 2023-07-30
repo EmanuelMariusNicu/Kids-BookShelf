@@ -26,7 +26,7 @@ def entry_list(request):
         'filtered': filtered
     }
 
-    return render(request, 'forum/templates/forum.html', context)
+    return render(request, 'forum/forum.html', context)
 
 
 def entry_detail(request, slug):
@@ -69,7 +69,7 @@ def entry_detail(request, slug):
         'responses': response,
     }
 
-    return render(request, 'forum/templates/entry_detail.html', context)
+    return render(request, 'forum/entry_detail.html', context)
 
 
 @login_required
@@ -93,7 +93,7 @@ def create_entry(request):
     else:
         form = EntryForm()
 
-    template = 'forum/templates/create_entry.html'
+    template = 'forum/create_entry.html'
     context = {
         'form': form,
     }
@@ -105,7 +105,7 @@ def create_entry(request):
 def edit_entry(request, slug):
     """ Edit a forum post """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only store owners can edit that.')
         return redirect(reverse('home'))
 
     entry = get_object_or_404(Entry, slug=slug)
@@ -125,7 +125,7 @@ def edit_entry(request, slug):
             request,
             f'You are editing the forum post "{entry.title}"')
 
-    template = 'forum/templates/edit_entry.html'
+    template = 'forum/edit_entry.html'
     context = {
         'form': form,
         'entry': entry,

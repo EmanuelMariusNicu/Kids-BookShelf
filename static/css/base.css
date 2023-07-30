@@ -1,8 +1,6 @@
-/* Google Fonts: font-family: 'Pacifico', cursive;
-                 font-family: 'Varela Round', sans-serif; */
 
 :root {
-    --primary-color: rgb(148, 148, 236);
+    --primary-color: #ceb4cf;
     --primary-color-dark: #ceb4cf;
 }
 
@@ -24,7 +22,7 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 h1 {
@@ -37,9 +35,6 @@ p {
     font-size: 1.2rem;
 }
 
-.logo-font {
-    font-family: 'Pacifico', cursive;
-}
 .show {
     background-color:#dbdae3;
 }
@@ -105,13 +100,14 @@ header {
 }
 
 .logo {
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    font-family: 'Orbitron', sans-serif;
     font-size: 2.25rem;
     color: #000;
 }
 
 .logo:hover {
-    color: #000;
+    color: #595274;
 }
 
 .navbar-nav,
@@ -122,6 +118,7 @@ header {
 .navbar {
     padding: 0;
     align-content: center;
+    margin-bottom: -10px;
 }
 
 .nav-item,
@@ -138,8 +135,11 @@ header {
 }
 
 .nav-link {
-    color: #000;
+    color:#372a48;
     font-size: 1.3rem;
+}
+.nav-item {
+    color: #372a48;
 }
 
 .nav-link:hover {
@@ -356,6 +356,9 @@ footer {
 .social-icon {
     font-size: 2.5rem;
 }
+/* .social-link {
+    
+} */
 
 .privacy-link {
     text-transform: uppercase;

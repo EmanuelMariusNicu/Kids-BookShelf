@@ -44,12 +44,13 @@ INSTALLED_APPS = [
     'home',
     'products',
     'basket',
+    'checkout',
     'profiles',
     'forum',
+    # Others
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
-    'checkout',
     'storages',
     
     
@@ -108,7 +109,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth', 
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'kids_bookShelf.context_processors.categories_to_base',
+                # 'kids_bookShelf.context_processors.categories_to_base',
                 'basket.contexts.basket_contents',
             ],
             'builtins': [
@@ -237,7 +238,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'chirpychooks@example.com'
+    DEFAULT_FROM_EMAIL = 'kidsbookshelf@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
