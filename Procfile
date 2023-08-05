@@ -1,1 +1,1 @@
-web: gunicorn kids_bookShelf.wsgi:application
+web: gunicorn kids_bookshelf.wsgi:application
