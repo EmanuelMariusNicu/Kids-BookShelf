@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <div class="container mb-5 d-flex flex-column">
+            <h1>Trouble inside HQ!</h1>
+            <p class="fs-3 my-4">Something went wrong on our end. Apologies!</p>
+             <a href="{% url 'home' %}" class="btn btn-white-bg">
+                    <span class="icon">
+                        <iconify-icon inline icon="ion:chevron-back-circle" width="16"></iconify-icon>
+                    </span>
+                    Back
+                </a>
+        </div>
+    </main>
+{% endblock %}

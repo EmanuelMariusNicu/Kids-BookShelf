@@ -95,7 +95,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        print('checkout apelat')
+        #print('checkout called') test
         # Attempt to prefill the form with
         # any info the user maintains in their profile
         if request.user.is_authenticated:

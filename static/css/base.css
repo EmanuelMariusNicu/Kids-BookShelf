@@ -1,7 +1,7 @@
 
 :root {
     --primary-color: #ceb4cf;
-    --primary-color-dark: #ceb4cf;
+    --primary-color-dark: #7794e6;
 }
 
 *,
@@ -64,13 +64,13 @@ button:hover {
 }
 
 .btn-colour-bg:hover {
-    background-color: #fff;
+    background-color: #b9d32a;
+    color:#b9d32a
 }
 
 .btn:hover {
     font-weight: 600;
 }
-
 /* User authentication pages (sign up, login, logout) */
 
 .auth-container {

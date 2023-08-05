@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <div class="container mb-5 d-flex flex-column">
+            <h1>Your books are lost!</h1>
+            <p class="fs-3 my-4">Looks like your pecking at the wrong URL...</p>
+             <a href="{% url 'home' %}" class="btn btn-white-bg error-btn">
+                    <span class="icon">
+                        <iconify-icon inline icon="ion:chevron-back-circle" width="16"></iconify-icon>
+                    </span>
+                    Back
+                </a>
+        </div>
+    </main>
+{% endblock %}

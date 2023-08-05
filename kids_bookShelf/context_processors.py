@@ -1,5 +1,5 @@
-from products.models import Product, Category
+# from products.models import Product, Category
 
-def categories_to_base(request):    
-    categories = Category.objects.all()    
-    return {'categories': categories}
+# def categories_to_base(request):    
+#     categories = Category.objects.all()    
+#     return {'categories': categories}
