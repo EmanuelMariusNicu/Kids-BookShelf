@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Orbitron&display=swap');
 
 :root {
     --primary-color: #ceb4cf;
@@ -19,10 +20,12 @@ html {
 }
 
 body {
+    font-family: 'Cinzel Decorative', cursive;
+    /* font-family: 'Orbitron', sans-serif; */
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
 }
 
 h1 {
@@ -391,7 +394,7 @@ footer {
 #mc_embed_signup {
     background: transparent;
     clear: left;
-    font: .6rem Helvetica, Arial, sans-serif;
+    /* font: .6rem Helvetica, Arial, sans-serif; */
     max-width: 500px;
 }
 
