@@ -26,7 +26,7 @@ else:
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 ALLOWED_HOSTS = [
-    'kids-bookshelf.herokuapp.com',
+    'kids-bookshelf-bfa2b8e9e45c.herokuapp.com',
     'localhost',
     '8000-emanuelmari-kidsbookshe-jecmvpsamgh.ws-eu102.gitpod.io',
     ]
