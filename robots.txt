@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+Disallow: /checkout/
+Disallow: /profiles/
+Sitemap: https://8000-emanuelmari-kidsbookshe-jecmvpsamgh.ws-eu102.gitpod.io/sitemap.xml
