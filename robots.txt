@@ -3,4 +3,4 @@ Disallow: /accounts/
 Disallow: /basket/
 Disallow: /checkout/
 Disallow: /profiles/
-Sitemap: https://8000-emanuelmari-kidsbookshe-jecmvpsamgh.ws-eu102.gitpod.io/sitemap.xml
+Sitemap: https://kids-bookshelf-bfa2b8e9e45c.herokuapp.com/sitemap.xml
