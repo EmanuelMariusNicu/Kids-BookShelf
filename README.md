@@ -134,8 +134,109 @@ Logo image is custom made especially for the website relevance.
 Icons used for the purpose of navigation are standards symbols which should be familiar to most users.
 For full despcription of all images and their sources see [Media and Styling](#media-and-styling).
 
-
 ## SEO and Marketing
 
 For an extensive overview of the marketing research for this project, please refer to this [SEO and Marketing documentation](MARKETING.md)
+
+
+## Features
+
+### Existing Features
+
+#### Global and Home
+
+**Navigation**
+
+- Responsive navbar with burger dropdown menu
+- Shop logo as default home link
+- Navigation options dependant of user authentication/authorisation
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/c4e44e5d-912e-4050-a850-2ed067481770)
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/337e1f51-9e57-4a23-968b-5fed546ddce2)
+
+
+
+**Footer**
+
+- Footer element with social media links
+- Contains link to privacy policy
+- Newsletter sign up option
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/8414ba4b-425f-49c7-9f9e-66a4b980d0b0)
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/be11cc3e-309f-4c3d-a5c8-4500a0997fc2)
+
+
+**Home page**
+
+- Home page with banner image and introduction
+- Shop Now button ("Go To Library")
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/3bc24399-623d-4b7e-b318-a554d3e5c286)
+
+
+**About page**
+
+- General info about store operations
+- Contact info incl. address, phone number and email
+- Shop opening hours
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/9941cda9-2a4d-49b6-ae7f-fc0e97e3b03e)
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/d6d7fa6a-67a8-4d8a-8eea-64ec5f395c8f)
+
+
+**Privacy policy**
+
+- Standard GDPR compliant privacy policy page 
+- Linked to in footer
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/8153b550-4539-45d8-a20a-81e995c07b10)
+
+
+Image does not contain entire policy document. Visit site to view full policy.
+
+**404 Error page**
+- Informs user of invalid URL
+- Back button redirects user back to home page
+
+
+
+**User feedback**
+
+- Alert messages inform user of:
+
+    - Actions about to be performed
+    - Actions successfully completed
+    - Actions failed to complete
+
+
+#### Authentication
+
+**Sign Up**
+
+- Allows new users to create account
+- Sign up process includes confirmation email with confirmation link
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/9bba9236-9cf6-42b8-997e-957464daabbb)
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/2d8c9f34-13ef-4d8c-863f-6db3adc097e6)
+
+
+**Login**
+
+- Allows existing users to log into their account
+- Includes Remember me checkbox and forgot Password option
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/f2953f9a-bfb8-439c-906c-d779ebf0d184)
+
+
+**Logout**
+
+- Allows authenticated users to securely log out of their account
+
+![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/b9290cdc-a111-43a2-968a-56b432a62ea3)
+
+
+
 
