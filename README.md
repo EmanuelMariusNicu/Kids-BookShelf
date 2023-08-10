@@ -12,14 +12,11 @@ On their site, Chirpy Chooks also host a forum about all things poultry. Article
     - [5 Planes of UX](#5-planes-of-ux)
     - [Visual Design Choices](#visual-design-choices)
 
-- [SEO and Marketing](#seo-and-marketing)
-
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Future Features](#possible-future-features)
 
 - [Database Design](#database-design)
-    - [Database Model](#database-model)
     - [Custom Model](#custom-model)
     - [CRUD](#crud)
 
@@ -133,11 +130,6 @@ All images of this site are purely related to the products offered in the store 
 Logo image is custom made especially for the website relevance.
 Icons used for the purpose of navigation are standards symbols which should be familiar to most users.
 For full despcription of all images and their sources see [Media and Styling](#media-and-styling).
-
-## SEO and Marketing
-
-For an extensive overview of the marketing research for this project, please refer to this [SEO and Marketing documentation](MARKETING.md)
-
 
 ## Features
 
