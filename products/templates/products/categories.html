@@ -13,9 +13,9 @@
     <div class="row d-flex justify-content-evenly card-container">
         {% for category in categories %}
             <div class="category-card">
-                <a href="{% url 'products' %}?category={{ category.name }}" class="category-link">
-                    <img class="category-img" src="{{ category.image.url }}" alt="{{ category.name }}">
-                    <h2 class="category-link-title">{{ category.name }}</h2>
+                <a href="{% url 'products' %}?category={{ category.friendly_name }}" class="category-link">
+                    <img class="category-img" src="{{ category.image.url }}" alt="{{ category.friendly_name }}">
+                    <h2 class="category-link-title">{{ category.friendly_name }}</h2>
                 </a>
             </div>
         {% endfor %}

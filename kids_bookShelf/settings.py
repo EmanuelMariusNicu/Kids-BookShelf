@@ -24,11 +24,11 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = [
     'kids-bookshelf-bfa2b8e9e45c.herokuapp.com',
     'localhost',
-    '8000-emanuelmari-kidsbookshe-jecmvpsamgh.ws-eu102.gitpod.io',
+    '8000-emanuelmari-kidsbookshe-wh7iwve5j5n.ws-eu104.gitpod.io',
     ]
 
 

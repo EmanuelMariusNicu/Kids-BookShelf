@@ -26,7 +26,7 @@
 		<!-- Google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Orbitron&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
 		
 		<!-- Mailchimp CSS -->
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
@@ -65,7 +65,7 @@
 	<header class="fixed top">
 		<div class="header-banner d-flex justify-content-between align-items-center">
 			<div class="logo-container">
-				<img class="navbar-brand logo" src="https://kids-bookshelf.s3.eu-west-2.amazonaws.com/static/images/new_logo.jpg" alt="company logo" width="200"  height="130"  href="{% url 'home' %}" aria-label="home link">
+				<img class="navbar-brand logo" src="https://kids-bookshelf.s3.eu-west-2.amazonaws.com/static/images/new_logo.jpg" alt="company logo" width="200"  height="130"  aria-label="home link">
 			</div>
 			<div class="banner-info d-none d-md-block">
 				<span class="banner-info_delivery text-muted"><iconify-icon inline icon="ph:map-pin"></iconify-icon> The online library</span>
@@ -93,8 +93,8 @@
 								<li><a class="dropdown-item" href="{% url 'categories' %}">All-Books</a></li>
 								<li><a class="dropdown-item" href="{% url 'products' %}?category=Sensorial">Sensorial</a></li>
 								<li><a class="dropdown-item" href="{% url 'products' %}?category=Fairytale">Fairytale</a></li>
-								<li><a class="dropdown-item" href="{% url 'products' %}?category=Non Fiction">Non-Fiction</a></li>
-								<li><a class="dropdown-item" href="{% url 'products' %}?category=Large prints">Large-Prints</a></li>
+								<li><a class="dropdown-item" href="{% url 'products' %}?category=Non-Fiction">Non-Fiction</a></li>
+								<li><a class="dropdown-item" href="{% url 'products' %}?category=Large-Prints">Large-Prints</a></li>
 							</ul>
 						
 						</li>
@@ -152,22 +152,23 @@
 	<!-- PAGE HEADER - END -->
 
     {% if messages %}
-        <div class="message-container"></div>
-				{% for message in messages %}
-			{% with message.level as level %}
-				{% if level == 40 %}
-					{% include 'includes/toasts/toast_error.html' %}
-				{% elif level == 30 %}
-					{% include 'includes/toasts/toast_warning.html' %}
-				{% elif level == 25 %}
-					{% include 'includes/toasts/toast_success.html' %}
-				{% else%}
-					{% include 'includes/toasts/toast_info.html' %}
+        <div class="message-container">
+					{% for message in messages %}
+		{% with message.level as level %}
+			{% if level == 40 %}
+				{% include 'includes/toasts/toast_error.html' %}
+			{% elif level == 30 %}
+				{% include 'includes/toasts/toast_warning.html' %}
+			{% elif level == 25 %}
+				{% include 'includes/toasts/toast_success.html' %}
+			{% else%}
+				{% include 'includes/toasts/toast_info.html' %}
 				{% endif %}
-			{% endwith %}
+		{% endwith %}
 		{% endfor %}
-		</div>
-    {% endif %}
+	    </div>
+    
+	{% endif %}
 
     
 	<!-- MAIN PAGE CONTENT -->

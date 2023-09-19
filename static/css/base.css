@@ -19,7 +19,8 @@ html {
 }
 
 body {
-    font-family: 'Cinzel Decorative', cursive !important;
+    /* font-family: 'Cinzel Decorative', cursive !important; */
+    font-family: 'Source Code Pro', monospace;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -64,8 +65,8 @@ button:hover {
 }
 
 .btn-colour-bg:hover {
-    background-color: #b9d32a;
-    color:#b9d32a
+    background-color: #8cc2d2;
+    color:#2f2f2d
 }
 
 .btn:hover {
