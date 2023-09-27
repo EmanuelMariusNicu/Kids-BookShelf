@@ -503,12 +503,21 @@ For a detailed description of all CRUD features see [Features](#features)
 For extensive instructions on how to manually test this site and it's user stories, please refer to these [Manual Testing Instructions](TESTING.md)
 ### Test Guide
 
-For extensive instructions on how to manually test this site and it's user stories, please refer to these [Manual Testing Instructions](TESTING.md)
 ### Validator Testing
 
-#### HTML [W3C validator](https://validator.w3.org/)
+####  HTML [W3C Markup Validation](https://validator.w3.org/)  is a service provided by the W3C that allows you to validate your HTML code against the official specifications. It checks for syntax errors, improper tag usage, and other issues that may affect the structure and semantics of your web pages. Validating your HTML code with W3C Markup Validation helps ensure that your pages are well-formed and adhere to web standards.
+| **Tested** | **Result** | **View Result** | **Pass** |
+--- | --- | --- | :---:
+|base| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/base.png)</details>| :white_check_mark:
+|index| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/index.png)</details>| :white_check_mark:
+|add_| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/add_trip.png)</details>| :white_check_mark:
+|edit_| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/edit_trip.png)</details>| :white_check_mark:
+|browse| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/browse.png)</details>| :white_check_mark:
+|post_detail| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/post_detail.png)</details>| :white_check_mark:
+|search_card| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/search_card)</details>| :white_check_mark:
+|search_results| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/search_results.png)</details>| :white_check_mark:
 
-As this is a Django project, the HTML couldn't be tested via the site's URL, due to Django tags and Jinja templating language in HTML files. Instead, the source code of each page was pasted into the validator directly.
+
 
 #### CSS [Jigsaw](https://jigsaw.w3.org/css-validator/)
 
