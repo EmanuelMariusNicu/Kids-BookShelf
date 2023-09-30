@@ -21,8 +21,8 @@
   "pk": 3,
   "model": "products.category",
   "fields": {
-    "name": "Non-Fiction",
-    "friendly_name": "Non Fiction",
+    "name": "NonFiction",
+    "friendly_name": "Non-Fiction",
     "image":"Non-fiction-books.jpg"
   }
 },
@@ -30,8 +30,8 @@
   "pk":4,
   "model": "products.category",
   "fields": {
-    "name": "Large-Prints",
-    "friendly_name": "Large Prints",
+    "name": "LargePrints",
+    "friendly_name": "Large-Prints",
     "image":"Large-prints-books.jpg"
   }
 }]
