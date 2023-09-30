@@ -2,114 +2,134 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" 
-			  content="Discover a magical world of imagination with our online book library for kids! From sensorial to large prints and from fairytales to non fiction, our curated collection of children's books will captivate young minds. 
+<head>
+
+	{% block meta %}
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Discover a magical world of imagination with our online book library for kids! From sensorial to large prints and from fairytales to non fiction, our curated collection of children's books will captivate young minds. 
 			  Browse now and spark your child's imagination! ">
-			  <meta name="keywords" 
-			  content="online library,books for kids,
+	<meta name="keywords"
+		content="online library,books for kids,
 				       books for sale online, sensorial books, fairytale books, non fiction books, 
 					   large print books, used books for kids,used books at affordable prices ,books for young minds
 					   Look who's my pet, That's not my dinosaur, The smartest giant in town , The Gruffalo, A squash and a squeeze, Who's in the loo? ">
-			  
+
 	{% endblock %}
 
-    {% block extra_meta %}
-    {% endblock %} 
-
-    {% block corecss %}
-		<!-- Google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
-		
-		<!-- Mailchimp CSS -->
-		<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-		<!-- Bootstrap CSS -->
-       
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<!-- Custom stylesheet -->
-		<link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
-
-    {% block extra_css %}
-    {% endblock %}
-
-    {% block corejs %}
-
-			<!-- Iconify -->
-			<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-			<!-- JQuery -->
-        	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-			<!-- Bootstrap JS -->
-        	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-			<!-- Stripe -->
-		 	<script src="https://js.stripe.com/v3/"></script>
-		
-    {% endblock %}
-
-    {% block extra_js %}
+	{% block extra_meta %}
 	{% endblock %}
 
-    <title>Kids'BookShelf {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-	
-    {% block page_header %}
-    <!-- PAGE HEADER - START -->
+	{% block corecss %}
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+	<!-- Mailchimp CSS -->
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+	<!-- Bootstrap CSS -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	{% endblock %}
+
+	{% block extra_css %}
+	{% endblock %}
+
+	{% block corejs %}
+
+	<!-- Iconify -->
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<!-- Stripe -->
+	<script src="https://js.stripe.com/v3/"></script>
+
+	{% endblock %}
+
+	{% block extra_js %}
+	{% endblock %}
+
+	<title>Kids'BookShelf {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
+
+	{% block page_header %}
+	<!-- PAGE HEADER - START -->
 	<header class="fixed top">
 		<div class="header-banner d-flex justify-content-between align-items-center">
 			<div class="logo-container">
-				<img class="navbar-brand logo" src="https://kids-bookshelf.s3.eu-west-2.amazonaws.com/static/images/new_logo.jpg" alt="company logo" width="200"  height="130"  aria-label="home link">
+				<img class="navbar-brand logo"
+					src="https://kids-bookshelf.s3.eu-west-2.amazonaws.com/static/images/new_logo.jpg"
+					alt="company logo" width="200" height="130" aria-label="home link">
 			</div>
 			<div class="banner-info d-none d-md-block">
-				<span class="banner-info_delivery text-muted"><iconify-icon inline icon="ph:map-pin"></iconify-icon> The online library</span>
-				<span class="banner-info_email text-muted"><iconify-icon inline icon="entypo:email"></iconify-icon>Kidsbookshelf.com</span>
-				<span class="banner-info_phone text-muted"><iconify-icon inline icon="ph:phone-light"></iconify-icon> 002500877</span>
+				<span class="banner-info_delivery text-muted"><iconify-icon inline icon="ph:map-pin"></iconify-icon> The
+					online library</span>
+				<span class="banner-info_email text-muted"><iconify-icon inline
+						icon="entypo:email"></iconify-icon>Kidsbookshelf.com</span>
+				<span class="banner-info_phone text-muted"><iconify-icon inline icon="ph:phone-light"></iconify-icon>
+					002500877</span>
 			</div>
 		</div>
 		<!-- NAVIGATION - START -->
 		<nav class="navbar navbar-expand-md bg-body-tertiary">
-			<button class="navbar-toggler btn btn-colour-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="toggler-icon" ><iconify-icon icon="circum:menu-burger"></iconify-icon></span>
+			<button class="navbar-toggler btn btn-colour-bg" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="toggler-icon"><iconify-icon icon="circum:menu-burger"></iconify-icon></span>
 			</button>
-			<div class="w-100 d-flex justify-content-between">	
+			<div class="w-100 d-flex justify-content-between">
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav w-100 d-flex justify-content-between">
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<iconify-icon icon="game-icons:bookshelf" width="40" height="30"  style="color:rgb(28, 8, 141)"></iconify-icon>
-								Library 
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<iconify-icon icon="game-icons:bookshelf" width="40" height="30"
+									style="color:rgb(28, 8, 141)"></iconify-icon>
+								Library
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="{% url 'categories' %}">All-Books</a></li>
-								<li><a class="dropdown-item" href="{% url 'products' %}?category=Sensorial">Sensorial</a></li>
-								<li><a class="dropdown-item" href="{% url 'products' %}?category=Fairytale">Fairytale</a></li>
-								<li><a class="dropdown-item" href="{% url 'products' %}?category=Non-Fiction">Non-Fiction</a></li>
-								<li><a class="dropdown-item" href="{% url 'products' %}?category=Large-Prints">Large-Prints</a></li>
+								<li><a class="dropdown-item"
+										href="{% url 'products' %}?category=Sensorial">Sensorial</a></li>
+								<li><a class="dropdown-item"
+										href="{% url 'products' %}?category=Fairytale">Fairytale</a></li>
+								<li><a class="dropdown-item"
+										href="{% url 'products' %}?category=Non-Fiction">Non-Fiction</a></li>
+								<li><a class="dropdown-item"
+										href="{% url 'products' %}?category=Large-Prints">Large-Prints</a></li>
 							</ul>
-						
+
 						</li>
-						
+
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="{% url 'forum' %}" >Forum</a>	
+							<a class="nav-link" aria-current="page" href="{% url 'forum' %}">Forum</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="{% url 'about' %}">About Us</a>
 						</li>
 						{% if request.user.is_authenticated %}
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<iconify-icon icon="iconamoon:profile-fill" width="40" height="26"  style="color:rgb(28, 8, 141)"></iconify-icon>
-								Profile 
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<iconify-icon icon="iconamoon:profile-fill" width="40" height="26"
+									style="color:rgb(28, 8, 141)"></iconify-icon>
+								Profile
 
 							</a>
 							<ul class="dropdown-menu">
@@ -133,112 +153,119 @@
 						{% endif %}
 						<li class="nav-item basket-link">
 							<a class="nav-link" href="{% url 'basket' %}">
-								 Basket 
+								Basket
 								{% if basket_items %}
-									<span class="basket-items-count">&#40;{{ request.session.basket.keys | length }}&#41;</span>
+								<span class="basket-items-count">&#40;{{ request.session.basket.keys | length
+									}}&#41;</span>
 								{% endif %}
-								<iconify-icon icon="streamline:shopping-cart-2-shopping-cart-checkout" width="40" height="27" style="color:rgb(28, 8, 141)"></iconify-icon>
+								<iconify-icon icon="streamline:shopping-cart-2-shopping-cart-checkout" width="40"
+									height="27" style="color:rgb(28, 8, 141)"></iconify-icon>
 							</a>
 						</li>
-						
-						
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- NAVIGATION - END -->
-	{% endblock %}
+		{% endblock %}
 	</header>
 	<!-- PAGE HEADER - END -->
 
-    {% if messages %}
-        <div class="message-container">
-					{% for message in messages %}
+	{% if messages %}
+	<div class="message-container">
+		{% for message in messages %}
 		{% with message.level as level %}
-			{% if level == 40 %}
-				{% include 'includes/toasts/toast_error.html' %}
-			{% elif level == 30 %}
-				{% include 'includes/toasts/toast_warning.html' %}
-			{% elif level == 25 %}
-				{% include 'includes/toasts/toast_success.html' %}
-			{% else%}
-				{% include 'includes/toasts/toast_info.html' %}
-				{% endif %}
+		{% if level == 40 %}
+		{% include 'includes/toasts/toast_error.html' %}
+		{% elif level == 30 %}
+		{% include 'includes/toasts/toast_warning.html' %}
+		{% elif level == 25 %}
+		{% include 'includes/toasts/toast_success.html' %}
+		{% else%}
+		{% include 'includes/toasts/toast_info.html' %}
+		{% endif %}
 		{% endwith %}
 		{% endfor %}
-	    </div>
-    
+	</div>
+
 	{% endif %}
 
-    
+
 	<!-- MAIN PAGE CONTENT -->
 	<div class="container mb-5">
-			{% block content %}
-			{% endblock %}
+		{% block content %}
+		{% endblock %}
 	</div>
 
 	<!-- PAGE FOOTER - START -->
-	<footer>	
+	<footer>
 		<div class="social-media-container">
-			<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link"
-           	 	aria-label="Facebook"><iconify-icon icon="ri:facebook-box-fill" style="color: black;" class="social-icon"></iconify-icon></a>
+			<a href="https://www.facebook.com/profile.php?id=100068783085174" target="_blank" rel="noopener noreferrer"
+				class="social-link" aria-label="Facebook"><iconify-icon icon="ri:facebook-box-fill"
+					style="color: black;" class="social-icon"></iconify-icon></a>
 			<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link"
-				aria-label="Instagram"><iconify-icon icon="ph:instagram-logo" style="color: black;" class="social-icon"></iconify-icon></a>
+				aria-label="Instagram"><iconify-icon icon="ph:instagram-logo" style="color: black;"
+					class="social-icon"></iconify-icon></a>
 			<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link"
-				aria-label="Linkedin"><iconify-icon icon="ph:linkedin-logo" style="color: black;" class="social-icon"></iconify-icon></a>
+				aria-label="Linkedin"><iconify-icon icon="ph:linkedin-logo" style="color: black;"
+					class="social-icon"></iconify-icon></a>
 		</div>
-		<a  class="privacy-link" href="{% url 'privacy' %}">Privacy Policy</a>
+		<a class="privacy-link" href="{% url 'privacy' %}">Privacy Policy</a>
 		<div class="newsletter-toggle-container">
 			<button class="newsletter-toggle" id="newsletter-toggle-btn">
 				<iconify-icon inline icon="game-icons:letter-bomb" style="color: black;" width="24"></iconify-icon>
 				Get our Newsletter
 			</button>
 		</div>
-	</div>
-	<!-- Begin Mailchimp Signup Form -->
-	<div id="mc_embed_signup">
-		<form action="https://gmail.us17.list-manage.com/subscribe/post?u=a885c08eee6ef78956b3dcafd&amp;id=12d6cb3619&amp;f_id=00e556e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			<div id="mc_embed_signup_scroll">
-				<h2>Subscribe to our Newsletter</h2>
-				<div class="mc-field-group">
-					<label for="mce-EMAIL">Email Address (required) <span class="asterisk">*</span></label>
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-					<span id="mce-EMAIL-HELPERTEXT" class="helper_text d-none"></span>
-				</div>
-				<div id="mce-responses" class="clear foot">
-					<div class="response" id="mce-error-response" style="display:none"></div>
-					<div class="response" id="mce-success-response" style="display:none"></div>
-				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				<div style="position: absolute; left: -5000px;" aria-hidden="true">
-					<input type="text" name="b_a885c08eee6ef78956b3dcafd_12d6cb3619" tabindex="-1" value="">
-				</div>
-				<div class="optionalParent">
-					<div class="clear foot">
-						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button news-submit-btn">
+		<!-- Begin Mailchimp Signup Form -->
+		<div id="mc_embed_signup">
+			<form
+				action="https://gmail.us17.list-manage.com/subscribe/post?u=a885c08eee6ef78956b3dcafd&amp;id=12d6cb3619&amp;f_id=00e556e0f0"
+				method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+				target="_blank" novalidate>
+				<div id="mc_embed_signup_scroll">
+					<h2>Subscribe to our Newsletter</h2>
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address (required) <span class="asterisk">*</span></label>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+						<span id="mce-EMAIL-HELPERTEXT" class="helper_text d-none"></span>
+					</div>
+					<div id="mce-responses" class="clear foot">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true">
+						<input type="text" name="b_a885c08eee6ef78956b3dcafd_12d6cb3619" tabindex="-1" value="">
+					</div>
+					<div class="optionalParent">
+						<div class="clear foot">
+							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+								class="button news-submit-btn">
+						</div>
 					</div>
 				</div>
-			</div>
-		</form>
-	</div>
-	
-	<!-- End mc_embed_signup -->
-</footer>
-<!-- PAGE FOOTER - END -->
+			</form>
+		</div>
 
-{% block postloadjs %}
-	
+		<!-- End mc_embed_signup -->
+	</footer>
+	<!-- PAGE FOOTER - END -->
+
+	{% block postloadjs %}
+
 	<script>
-		 // Bootstrap boilerplate JS for toast handling
+		// Bootstrap boilerplate JS for toast handling
 		let toast = bootstrap.Toast.getOrCreateInstance(document.querySelector('.toast'));
 		toast.show(); 
 	</script>
 
-	<!-- Newsletter toggle JS --> 
+	<!-- Newsletter toggle JS -->
 	<script>
 		let newsToggleBtn = document.getElementById("newsletter-toggle-btn");
 		let newsSignupForm = document.getElementById("mc_embed_signup");
 		newsToggleBtn.addEventListener("click", toggleNewsletterForm);
-		
+
 		// source code: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 		function toggleNewsletterForm() {
 			if (newsSignupForm.style.display === "block") {
@@ -252,25 +279,25 @@
 	<!-- Mailchimp JS -->
 	<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 	<script>
-		(function($) {
-			window.fnames = new Array(); 
+		(function ($) {
+			window.fnames = new Array();
 			window.ftypes = new Array();
-			fnames[0]='EMAIL';
-			ftypes[0]='email';
-			fnames[1]='FNAME';
-			ftypes[1]='text';
-			fnames[2]='LNAME';
-			ftypes[2]='text';
-			fnames[3]='ADDRESS';
-			ftypes[3]='address';
-			fnames[4]='PHONE';
-			ftypes[4]='phone';
-			fnames[5]='BIRTHDAY';
-			ftypes[5]='birthday';
+			fnames[0] = 'EMAIL';
+			ftypes[0] = 'email';
+			fnames[1] = 'FNAME';
+			ftypes[1] = 'text';
+			fnames[2] = 'LNAME';
+			ftypes[2] = 'text';
+			fnames[3] = 'ADDRESS';
+			ftypes[3] = 'address';
+			fnames[4] = 'PHONE';
+			ftypes[4] = 'phone';
+			fnames[5] = 'BIRTHDAY';
+			ftypes[5] = 'birthday';
 		}(jQuery));
 		var $mcj = jQuery.noConflict(true);
 	</script>
 	{% endblock %}
 </body>
+
 </html>
-	
