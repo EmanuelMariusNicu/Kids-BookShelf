@@ -58,5 +58,17 @@
       "image": "book8.jpg",
       "category":"2"
     }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku":"LRGPS",
+      "name": "The Gruffalo1",
+      "description":"A fantasy book1",
+      "price":"5.99",
+      "image": "book8.jpg",
+      "category":"2"
+    }
   }
 ]
