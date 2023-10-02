@@ -508,14 +508,22 @@ For extensive instructions on how to manually test this site and it's user stori
 ####  HTML [W3C Markup Validation](https://validator.w3.org/)  is a service provided by the W3C that allows you to validate your HTML code against the official specifications. It checks for syntax errors, improper tag usage, and other issues that may affect the structure and semantics of your web pages. Validating your HTML code with W3C Markup Validation helps ensure that your pages are well-formed and adhere to web standards.
 | **Tested** | **Result** | **View Result** | **Pass** |
 --- | --- | --- | :---:
-|base| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/base.png)</details>| :white_check_mark:
-|index| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/index.png)</details>| :white_check_mark:
-|add_| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/add_trip.png)</details>| :white_check_mark:
-|edit_| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/edit_trip.png)</details>| :white_check_mark:
-|browse| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/browse.png)</details>| :white_check_mark:
-|post_detail| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/post_detail.png)</details>| :white_check_mark:
-|search_card| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/search_card)</details>| :white_check_mark:
-|search_results| No errors | <details><summary>Screenshot of result</summary>![Result](/docs/validation/html/search_results.png)</details>| :white_check_mark:
+|home| No errors | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/703cb661-b5bf-48b2-9b2a-73c0a17c2374)
+</details>| :white_check_mark:
+|products| No errors | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/bcdd028f-edbd-45fb-97ef-9f00880468e4)
+</details>| :white_check_mark:
+|forum| No errors | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/7b1e50c2-db02-4b3c-952c-3e3a57add384)
+</details>| :white_check_mark:
+|about-us| No errors | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/4885bcdf-f38f-474a-b421-cf4f8de312ee)
+</details>| :white_check_mark:
+|create forum| No errors/(one info) | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/6b123ac5-875c-4c70-93d5-38ab0fbff5d6)
+</details>| :white_check_mark:
+|add product| No errors/(one info) | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/c287a4a3-08eb-4cd0-abae-93bd7dda62ae)
+</details>| :white_check_mark:
+|profile| No errors/(one info) | <details><summary>Screenshot of result</summary>![Result]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/9d911d82-ab1b-41e0-a1cb-43146e21afab)
+</details>| :white_check_mark:
+|basket| No errors | <details><summary>Screenshot of result</summary>![Result]![image]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/e775ba11-21a4-4151-a3f9-c9e1fad109c7)
+</details>| :white_check_mark:
 
 
 
