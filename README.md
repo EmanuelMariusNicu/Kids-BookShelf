@@ -547,6 +547,12 @@ For extensive instructions on how to manually test this site and it's user stori
 |basket| No errors | <details><summary>Screenshot of result</summary>![Result]![image]![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/e775ba11-21a4-4151-a3f9-c9e1fad109c7)
 </details>
 
+| **Tested** | **Result** | **View Result** |
+--- | --- | --- |
+|checkout| No errors | <details><summary>Screenshot of result</summary>![Result] ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/38058cfb-0894-4f2e-8c98-79ce303df1b4)
+</details>
+
+
 
 
 #### CSS [Jigsaw](https://jigsaw.w3.org/css-validator/)
