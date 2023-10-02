@@ -155,8 +155,7 @@
 							<a class="nav-link" href="{% url 'basket' %}">
 								Basket
 								{% if basket_items %}
-								<span class="basket-items-count">&#40;{{ request.session.basket.keys | length
-									}}&#41;</span>
+								<span class="basket-items-count">&#40;{{ request.session.basket.keys | length }}&#41;</span>
 								{% endif %}
 								<iconify-icon icon="streamline:shopping-cart-2-shopping-cart-checkout" width="40"
 									height="27" style="color:rgb(28, 8, 141)"></iconify-icon>
