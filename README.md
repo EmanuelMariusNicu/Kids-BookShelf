@@ -559,6 +559,42 @@ For extensive instructions on how to manually test this site and it's user stori
 
 No errors found.
 
+
+### Python
+
+I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+| File | Screenshot |
+| --- | --- |
+| Basket contexts.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/31af99f6-eb08-415e-a81d-96e717937849)
+| Basket urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/2ca0d0c5-97db-4d73-ad58-f0559e15b221)
+| Basket views.py |![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/31edec63-abcf-44f2-b4f2-7e32ccbf1a0d)
+| Checkout forms.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/9e46f44d-df14-48de-b7b5-634aa2b42cde)
+| Checkout models.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/02a56bb8-2bc3-46ea-a919-b098b2aadfa8)
+| Checkout signals.py |![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/de7ca952-ac27-4afd-ae23-1b3ce1d26ed5)
+| Checkout urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/5425c093-7f73-47f6-9952-9bbe548011da)
+| Checkout views.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/d6b138a4-80b2-4a99-964f-3f71d74635c5)
+| Checkout webhook_handler.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/f46191d3-5a47-4f6b-9c2d-a490271c7675)
+| Checkout webhooks.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/6e4076ff-4941-4618-84e8-33051ba6fc2d)
+| Forum admin.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/aca73677-707d-48b1-8d1c-e671fe0d2b90)
+| Forum forms.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/e02f3a8d-3689-419d-b817-af9e679e9e33)
+| Forum models.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/16d39e2d-85ff-417b-af24-3e92be56db4a)
+| Forum urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/51da924a-212a-4f81-8eab-f923946c4498)
+| Forum views.py |![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/ff35a497-526b-4a44-abd8-91d5c99879d9)
+| Homepage urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/832112bd-2e3d-4004-829f-6570f08fba01)
+| Homepage views.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/e8fe72c2-4bba-4352-af69-72c368f573ba)
+| Products admin.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/95bd8cb2-a4f9-46be-84e9-622719a519eb)
+| Products forms.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/0c212469-1d67-4ee1-96ec-abbcfd12411b)
+| Products models.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/dbada2b8-6efa-41e4-9958-8356e6c07f19)
+| Products urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/29a59328-f76f-4ded-8a31-dc0bf9178bf7)
+| Products views.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/8dd860bb-c4e6-4983-8324-e023a401d0cf)
+| Profiles forms.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/9f687734-9cdf-488b-9aae-7d32f65d8b81)
+| Profiles models.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/d682a4ec-4524-4ca5-9323-3094b0f64cf6)
+| Profiles urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/b7783623-ce76-4ea3-8f6b-0ef41e225a3a)
+| Profiles views.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/cda80a7f-7ddc-414d-afa1-58859af09bf6)
+| Project urls.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/15f867e5-8ff9-49b1-9b8b-80ca0a2a3571)
+| Project views.py | ![image](https://github.com/EmanuelMariusNicu/kids-bookShelf/assets/108750655/d3f927e6-eed5-40aa-b990-cc7e02056782)
+
 #### Performance, Accessibility, SEO, Best Practices (Lighthouse Chrome DevTools)
 
 **Desktop results**
