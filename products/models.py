@@ -13,6 +13,7 @@ class Category(models.Model):
         Ensure correct plural of Category
         in admin UI
         """
+        
         verbose_name_plural = 'Categories'
 
     def __str__(self):
@@ -20,6 +21,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.friendly_name
+
 
 class Product(models.Model):
     """

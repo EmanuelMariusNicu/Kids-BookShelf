@@ -41,7 +41,6 @@ def products(request):
 
 
 def product_detail(request, product_id):
-    
     """
     Displays product details
     """
@@ -53,6 +52,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -126,3 +126,4 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect('/products/')
+

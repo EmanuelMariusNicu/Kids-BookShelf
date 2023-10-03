@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def index(request):
     """
     renders index page
@@ -21,3 +22,4 @@ def privacy_policy(request):
     renders privacy policy page
     """
     return render(request, 'home/privacy.html')
+

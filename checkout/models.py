@@ -13,8 +13,8 @@ Leeds = "West Yorkshire"
 Liverpool = "Merseyside"
 Newcastle = "Tyne and Wear"
 Sheffield = "South Yorkshire"
-Bristol ="Bristol"
-Nottingham ="Nottinghamshire"
+Bristol = "Bristol"
+Nottingham = "Nottinghamshire"
 Leicester = "Leicestershire"
 Southampton = "Hampshire"
 Portsmouth = "Hampshire"
@@ -131,3 +131,4 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return f'Product {self.product.name}'
         f' on order {self.order.order_number}'
+

@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if 'SECRET_KEY' in os.environ:
-    SECRET_KEY = os.environ.get('SECRET_KEY','')
+    SECRET_KEY = os.environ.get('SECRET_KEY', '')
 else:
     SECRET_KEY = 'tm32ei(_olrjwmg%_+8^i*i%ft++of01o#*x-7#8)cux-+8hgc'
 
@@ -55,9 +55,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
-    'storages',
-    
-    
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -91,8 +89,8 @@ SUMMERNOTE_CONFIG = {
         # https://summernote.org/deep-dive/#custom-toolbar-popover
         'toolbar': [
             ['font', ['bold', 'italic', 'underline',]],
-            ['para', ['ul', 'ol',]],
-            ['insert', ['link',]],
+            ['para', ['ul', 'ol', ]],
+            ['insert', ['link', ]],
             ['view', ['fullscreen', 'help']],
         ],
     },
@@ -109,8 +107,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
-                'django.contrib.auth.context_processors.auth', 
+                'django.template.context_processors.request',  # req by allauth
+                'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 # 'kids_bookShelf.context_processors.categories_to_base',
@@ -132,7 +130,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend', 
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 SITE_ID = 1
@@ -257,3 +255,4 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

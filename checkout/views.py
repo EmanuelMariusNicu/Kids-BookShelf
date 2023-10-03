@@ -95,7 +95,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        #print('checkout called') test
+        # print('checkout called') test
         # Attempt to prefill the form with
         # any info the user maintains in their profile
         if request.user.is_authenticated:
@@ -170,7 +170,7 @@ def checkout_success(request, order_number):
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
-       
+
     }
 
     return render(request, template, context)

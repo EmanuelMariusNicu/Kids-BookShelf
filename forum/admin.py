@@ -30,3 +30,4 @@ class ResponseAdmin(admin.ModelAdmin):
         'create_date',
         'approved',
     )
+
