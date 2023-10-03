@@ -1,8 +1,7 @@
 # KIDS'BOOKSHELF
 
 This a Django based(fictional) e-commerce application of 5 required portfolio projects.
-Kids'BookShelf is an online store business based in the UK, specialising in used books for children. The store offers a variety of sensorial, fairytale/fiction, non-fiction and large-prints books. Currently the business offers orders only.
-On their site, Chirpy Chooks also host a forum about all things poultry. Articles published by the business itself are posted on a regular basis, offering helpful advice about children education, interesting facts about different books or the latest recommendations on book challenges, child health etc.
+Kids'BookShelf is an online store business based in the UK, specialising in used books for children. The store offers a variety of sensorial, fairytale/fiction, non-fiction and large-prints books. Currently the business offers orders only. Articles published by the business itself are posted on a regular basis, offering helpful advice about children education, interesting facts about different books or the latest recommendations on book challenges, child health etc.
 
 ## Table of Contents
 
